@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/map_style.css">
+  <title>EcoClean App - Map</title>
+  <link rel="website icon" type="png" href="img/logo.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="app-title">EcoClean - Map</h1>
+      <img src="img/logo.png" width="60">
+      <p class="app-subtitle">Your Community's Waste Management Solution Near You</p>
+    </div>
+  </header>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="dashboard.html">Home</a></li>
+      <li class="nav-item"><a href="event.html">Upcoming Events</a></li>
+      <li class="nav-item"><a href="education.html">Education</a></li>
+      <li class="nav-item"><a href="dashboard.html">Profile</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <section id="maps" class="section">
+      <header>
+        <h1>E-Waste Facility Locator</h1>
+        <div class="input-container">
+          <input type="text" id="search" placeholder="Enter your location">
+          <input type="text" id="type" placeholder="Enter type">
+          <div class="func-container">
+          <button onclick="searchFacilities()">Search</button>
+          <button onclick="camera()" class="cam-button">
+            <i class='bx bx-camera'></i>
+        </button>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div id="map"></div>
+    </main>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 EcoClean App and created by Soumya</p>
+  </footer>
+  
+  <script src="js/map_script.js"></script>
+</body>
+</html>

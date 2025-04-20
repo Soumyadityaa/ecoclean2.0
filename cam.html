@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Camera</title>
+    <link rel="stylesheet" href="/css/cam_style.css">
+</head>
+<body>
+    <div class="video-wrap">
+        <video id="video" playsinline autoplay></video>
+    </div>
+    <div class="controller">
+        <button id="snap">Capture</button>
+        <input type="file" id="fileInput" accept="image/*" />
+        <button id="upload">Upload</button>
+    </div>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div id="error-message"></div>
+    <script src="/js/cam_script.js"></script>
+</body>
+</html>
